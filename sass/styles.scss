@@ -1,0 +1,445 @@
+* {
+	margin: 0%;
+	padding: 0%;
+	box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Dancing+Script:wght@500&family=Raleway:wght@300&display=swap');
+
+$estilos: (
+        colorAzu:#00296b,
+        colorblco:#ffff,
+        colorAma: #fdc500,
+        );
+#body{
+    background-color: map-get($estilos,colorblco);
+    .navbarr {
+        .nav-link{
+            transform: scale(0.7);
+        }
+        .nav-link:hover{
+            transform: scale(1.2);
+        }
+    }
+    .navbar .container-fluid{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    #carrouselmobile{
+        display: none;
+    }
+    #carouselExampleControls{
+        background-color: #00296b;
+    }
+    #metodosDePago{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        padding: 15px;
+        margin-top: 15px;
+        background-color: map-get($estilos,colorblco);
+        color: map-get($estilos, colorAzu);
+        .parrafo{
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            justify-content: space-around;
+            margin-top: 10px;
+            margin-bottom: 18px;
+        }
+        .p1{
+            padding: 10px;
+            border-radius: 15px;
+            transform: scale(1, 1);
+            font-size: 20px;
+        }
+        .p1:hover{
+            transform: scale(1.5, 1.5);
+            transition: all 1.5s;
+            background-color: map-get($estilos, colorAzu);
+            color: map-get($estilos, colorblco);;
+            box-shadow: 10px 5px 5px black;
+            text-align: center;
+
+        }
+        .p2{
+            @extend .p1;
+        }
+        .p3{
+            @extend .p1;
+        }
+        .p4{
+            @extend .p1;
+        }
+    }
+    .h2{
+        text-align: center;
+        color: map-get($estilos, colorblco);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 25px;
+        padding: 15px;
+       background-color:map-get($estilos, colorAzu);
+    }
+    #marcas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #00296b;
+        padding: 15px;
+        background-color: #fdc500;
+        margin-top: -15px;
+       .imagenMobile{
+        display: none;
+       }
+    }
+    .separador{
+      margin-top: 20px;
+      border-bottom: 5px solid map-get($estilos, colorAzu );
+    }
+  #footerindx{
+        display: flex;
+        margin-top: 15px;
+        justify-content: center;
+        gap: 10px;
+        .logo-footermobile{
+            display: none;
+        }
+        .separadorf{
+            border-left: 5px solid map-get($estilos, colorAzu);
+            margin-top: -16px;
+        }
+        .redes{
+            margin-top: 19px;
+            display: flex;
+            gap: 15px;
+        }
+        .redesMobile{
+            display: none;
+        }
+    }
+}
+
+/*hoja productos*/
+#BodyProductos{
+    .navbar .container-fluid{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .navbar-prod {
+        .nav-link{
+            transform: scale(0.7);
+        }
+        .nav-link:hover{
+            transform: scale(1.2);
+        }
+    }
+    .tituloProductos{
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        background-color: map-get($estilos, colorAma );;
+        color: map-get($estilos, colorAzu );
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    #productos{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 15px;
+    }
+    .filtros{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        text-align: center;
+        font-family: 'Abel', sans-serif;
+        font-family: 'Dancing Script', cursive;
+        font-family: 'Raleway', sans-serif;
+        font-size: 20px;
+    }
+    .filtros:hover{
+        border: 2px solid rgb(242, 242, 242);
+        box-sizing: border-box;
+        box-shadow: #08080836 0px 0px 17px;
+    }
+    .encendido{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        text-align: center;
+        font-family: 'Abel', sans-serif;
+        font-family: 'Dancing Script', cursive;
+        font-family: 'Raleway', sans-serif;
+        font-size: 18px;
+    }
+    .encendido:hover{
+        @extend .filtros:hover;
+    }
+    .frenos{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        font-family: 'Abel', sans-serif;
+        font-family: 'Dancing Script', cursive;
+        font-family: 'Raleway', sans-serif;
+        font-size: 18px;
+    }
+    .frenos:hover{
+        @extend .filtros:hover;
+    }
+    .cubiertas{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        font-family: 'Abel', sans-serif;
+        font-family: 'Dancing Script', cursive;
+        font-family: 'Raleway', sans-serif;
+        font-size: 18px;
+    }
+    .cubiertas:hover{
+        @extend .filtros:hover;
+    }
+    #footerProductos{
+        display: flex;
+        margin-top: 15px;
+        justify-content: center;
+        border-top: 5px solid map-get($estilos, colorAzu );
+        #redesMobileProductos{
+            display: none;
+        }
+        #logo-footermobile-P{
+            display: none;
+        }
+        .logo-footer-P{
+            border-right: 5px solid map-get($estilos, colorAzu);
+        }
+        #contactoProductos{
+            .redesProductos{
+                display: flex;
+                gap: 20px;
+                margin-left: 5px;
+                margin-top: 40px;
+            }
+        }
+    }
+}
+    //hoja puntos de compra//
+
+ #bodyPdc{
+        background-color: map-get($estilos, colorAzu);
+        color: map-get($estilos, colorblco );
+        .navbar-pdc {
+            .nav-link{
+                transform: scale(0.7);
+            }
+            .nav-link:hover{
+                transform: scale(1.2);
+            }
+        }
+        .navbar .container-fluid{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        #ubicacion{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background: rgb(255,255,255);
+            background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(89,116,152,1) 27%, rgba(0,41,96,1) 100%);
+            padding: 15px;
+            .mobilemap{
+                display: none;
+            }
+            .parrafoub{
+                font-size: 25px;
+                margin-top: 10px;
+                text-align: center;
+            }
+        }
+        #footerpdc{
+            display: flex;
+            margin-top: 15px;
+            justify-content: center;
+            border-top: 5px solid map-get($estilos, colorAma );
+            #redesMobilePdc{
+                display: none;
+            }
+            .logo-footermobile-pdc{
+                display: none;
+            }
+            .logo-footer-pdc{
+                border-right: 5px solid map-get($estilos, colorAma);
+            }
+            #contactoPdc{
+                .redesPdc{
+                    display: flex;
+                    gap: 20px;
+                    margin-left: 5px;
+                    margin-top: 40px;
+                }
+            }
+        }
+    }
+    
+    
+    
+@media screen and (max-width: 780px) {
+        #body{
+            #carrouselmobile{
+                display: flex;
+            }
+            #carrousel{
+                display: none;
+            }
+            .navbarr{
+                text-align: center;
+            }
+            .navbar-toggler-icon {
+                filter: invert(1);
+            }
+            #metodosDePago{
+                .parrafo{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr ;
+                    grid-row: 1fr 1fr 1fr ;
+                    grid-row: 2/5;
+                    .p1{
+                        grid-column: 1/2;
+                        grid-row: 2/3;
+                    }
+                    .p2{
+                        grid-column: 2/3;
+                        grid-row: 2/3;
+                    }
+                    .p3{
+                        grid-column: 1/2;
+                        grid-row: 3/4;
+                    }
+                    .p4{
+                        grid-column: 2/3;
+                        grid-row: 3/4;
+                    }
+                }
+            }
+            
+            #marcas{
+                .imagen{
+                    display: none;
+                }
+                .imagenMobile{
+                    display: flex;
+                }
+                .h2{
+                    font-size: 20px;
+                }
+            }
+            
+            #footerindx{
+                display: flex;
+                .logo-footer{
+                    display: none;
+                }
+                .logo-footermobile{
+                    display: flex;
+                    text-align: start;
+                    margin-bottom: 5px;
+                }
+                .separadorf{
+                    display: none;
+                }
+                .separadorfm{
+                    border-right: 3px solid map-get($estilos, colorAzu );
+                    margin-top: -15px;
+                }
+                .redes{
+                    display: none;
+                }
+                .redesMobile{
+                    display: flex;
+                    margin-top: 5px;
+                    gap: 15px;
+                    margin-left: 5px;
+                }
+            }
+        }
+            #BodyProductos{
+            .navbar-toggler-icon {
+                filter: invert(1);
+            }
+            .tituloProductos{
+                display: flex;
+                text-align: center;
+            }
+            #productos{
+                display: flex;
+                flex-direction: column;
+            }
+            #footerProductos{
+                display: flex;
+                justify-content: center;
+                border-top: 5px solid map-get($estilos, colorAzu );
+                
+                .logo-footer-P{
+                    display: none;
+                }
+                #logo-footermobile-P{
+                    display: flex;
+                    margin-top: 1px;  
+                    flex-direction: row-reverse;
+                    .separador{
+                        border-right: 3px solid map-get($estilos, colorAzu );
+                        margin-top: -5px;
+                    } 
+                }
+                #contactoProductos{
+                    display: flex;
+                    .redesProductos{
+                    display: none;
+                    }
+            }
+            #redesMobileProductos{
+                display: flex;
+                margin-top: 5px;
+                gap: 15px;
+                margin-left: 5px;
+            }
+        }
+    }
+    
+    #bodyPdc{
+        
+        .navbar-toggler-icon {
+            filter: invert(1);
+        }
+        #ubicacion{
+            display: flex;
+            .maps{
+                display: none;
+            }
+            .mobilemap{
+                display: flex;
+            }
+        }
+        #footerpdc{
+            display: flex;
+            justify-content: center;
+            border-top: 3px solid map-get($estilos, colorAma );
+            margin-top: -1px;
+            .logo-footer-pdc{
+                display: none;
+            }
+            .logo-footermobile-pdc{
+                display: flex;
+                border-right: 3px solid map-get($estilos, colorAma );
+            }
+            #contactoPdc{
+                display: none;
+            }
+            #redesMobilePdc{
+                display: flex;
+                margin-top: 5px;
+                gap: 15px;
+                margin-left: 5px;
+            }
+        }
+    }
+}
