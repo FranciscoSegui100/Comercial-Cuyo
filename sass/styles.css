@@ -1,10 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Dancing+Script:wght@500&family=Raleway:wght@300&display=swap");
 * {
   margin: 0%;
   padding: 0%;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
-@import url("https://fonts.googleapis.com/css2?family=Abel&family=Dancing+Script:wght@500&family=Raleway:wght@300&display=swap");
 
 #body {
   background-color: #ffff;
@@ -192,7 +192,7 @@
   padding: 10px;
   background-color: #fdc500;
   color: #00296b;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 #BodyProductos #productos {
@@ -213,8 +213,6 @@
   -ms-grid-row-span: 1;
   grid-row: 1/2;
   text-align: center;
-  font-family: 'Abel', sans-serif;
-  font-family: 'Dancing Script', cursive;
   font-family: 'Raleway', sans-serif;
   font-size: 20px;
 }
@@ -235,8 +233,6 @@
   -ms-grid-row-span: 1;
   grid-row: 1/2;
   text-align: center;
-  font-family: 'Abel', sans-serif;
-  font-family: 'Dancing Script', cursive;
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
 }
@@ -248,8 +244,6 @@
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
-  font-family: 'Abel', sans-serif;
-  font-family: 'Dancing Script', cursive;
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
 }
@@ -261,8 +255,6 @@
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
-  font-family: 'Abel', sans-serif;
-  font-family: 'Dancing Script', cursive;
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
 }
@@ -338,7 +330,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Raleway', sans-serif;
   background: white;
   background: radial-gradient(circle, white 0%, #597498 27%, #002960 100%);
   padding: 15px;
@@ -349,6 +341,7 @@
 }
 
 #bodyPdc #ubicacion .parrafoub {
+  font-family: 'Raleway', sans-serif;
   font-size: 25px;
   margin-top: 10px;
   text-align: center;
@@ -378,6 +371,198 @@
 }
 
 #bodyPdc #footerpdc #contactoPdc .redesPdc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  margin-left: 5px;
+  margin-top: 40px;
+}
+
+#body-nos {
+  background: #00296b;
+  background: linear-gradient(229deg, #00296b 0%, #fdbb2d 100%);
+  color: #ffff;
+}
+
+#body-nos .navbar-nos .nav-link {
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+}
+
+#body-nos .navbar-nos .nav-link:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+#body-nos .navbar-nos .navbar .container-fluid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#body-nos #sobreNos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#body-nos #sobreNos #imagenes {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 300px 1fr;
+      grid-template-columns: 300px 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  margin-top: 60px;
+  margin-right: 70px;
+}
+
+#body-nos #sobreNos #imagenes .img1 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  border-radius: 30px;
+}
+
+#body-nos #sobreNos #imagenes .img2 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  border-radius: 30px;
+}
+
+#body-nos #sobreNos #imagenes .img3 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  border-radius: 30px;
+}
+
+#body-nos #sobreNos .tituloNos {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  margin-top: 25px;
+  font-family: 'EB Garamond', serif;
+}
+
+#body-nos #sobreNos .desk {
+  font-family: 'EB Garamond', serif;
+}
+
+#body-nos #sobreNos .celu {
+  display: none;
+}
+
+#body-nos #footerNos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 15px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-top: 5px solid #00296b;
+}
+
+#body-nos #footerNos #redesMobileNos {
+  display: none;
+}
+
+#body-nos #footerNos #logo-footermobile-nos {
+  display: none;
+}
+
+#body-nos #footerNos .logo-footer-nos {
+  border-right: 5px solid #00296b;
+}
+
+#body-nos #footerNos #contactoNos .redesNos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  margin-left: 5px;
+  margin-top: 40px;
+}
+
+#bodyDevo {
+  background-color: #ffff;
+  color: #00296b;
+}
+
+#bodyDevo .navbar-devo .nav-link {
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+}
+
+#bodyDevo .navbar-devo .nav-link:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+#bodyDevo .navbar-devo .navbar .container-fluid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#bodyDevo .infoDevo {
+  font-family: "Heebo", "Helvetica Neue", "Arial", "sans-serif";
+  padding: 15px;
+}
+
+#bodyDevo #footerDevo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 65px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-top: 5px solid #00296b;
+}
+
+#bodyDevo #footerDevo #redesMobileDevo {
+  display: none;
+}
+
+#bodyDevo #footerDevo #logo-footermobile-D {
+  display: none;
+}
+
+#bodyDevo #footerDevo .logo-footer-D {
+  border-right: 5px solid #00296b;
+}
+
+#bodyDevo #footerDevo #contactoDevo .redesDevo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -589,6 +774,107 @@
     display: none;
   }
   #bodyPdc #footerpdc #redesMobilePdc {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 5px;
+    gap: 15px;
+    margin-left: 5px;
+  }
+  #body-nos .navbar-toggler-icon {
+    -webkit-filter: invert(1);
+            filter: invert(1);
+  }
+  #body-nos #sobreNos {
+    padding: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #body-nos #sobreNos #imagenes {
+    display: none;
+  }
+  #body-nos #sobreNos #imgmobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 25px;
+  }
+  #body-nos #sobreNos #imgmobile .img1 {
+    border-radius: 15px;
+  }
+  #body-nos #sobreNos #imgmobile .img2 {
+    border-radius: 15px;
+  }
+  #body-nos #sobreNos #imgmobile .img3 {
+    border-radius: 15px;
+  }
+  #body-nos #sobreNos .tituloNos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-family: 'EB Garamond', serif;
+  }
+  #body-nos #sobreNos .desk {
+    display: none;
+  }
+  #body-nos #sobreNos .celu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: start;
+    font-family: 'EB Garamond', serif;
+  }
+  #body-nos #footerNos .logo-footer-nos {
+    display: none;
+  }
+  #body-nos #footerNos #logo-footermobile-nos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-right: 3px solid #00296b;
+  }
+  #body-nos #footerNos #contactoNos {
+    display: none;
+  }
+  #body-nos #footerNos #redesMobileNos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 5px;
+    gap: 15px;
+    margin-left: 5px;
+  }
+  #bodyDevo .navbar-toggler-icon {
+    -webkit-filter: invert(1);
+            filter: invert(1);
+  }
+  #bodyDevo #footerDevo {
+    margin-top: -4px;
+  }
+  #bodyDevo #footerDevo .logo-footer-D {
+    display: none;
+  }
+  #bodyDevo #footerDevo #logo-footermobile-D {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-right: 3px solid #00296b;
+  }
+  #bodyDevo #footerDevo #contactoDevo {
+    display: none;
+  }
+  #bodyDevo #footerDevo #redesMobileDevo {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
